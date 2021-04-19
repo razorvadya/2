@@ -8,7 +8,7 @@
   &__head,
   &__skills,
   &__footer {
-    background: url(/src/images/sprites/png/body.png);
+    background: url(./src/images/sprites/png/body.png);
     width: 660px;
     position: relative;
     border-bottom: 2px solid #f0f0f0;
@@ -53,7 +53,7 @@
     }
   }
   &__print {
-    background: url(/src/images/sprites/png/print.png) no-repeat;
+    background: url(./src/images/sprites/png/print.png) no-repeat;
     width: 184px;
     height: 166px;
     position: absolute;
@@ -112,7 +112,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label span {
-  background: url(/src/images/sprites/png/cheked.png) top no-repeat;
+  background: url(./src/images/sprites/png/cheked.png) top no-repeat;
 }
 input[type="checkbox"] + label span {
   display: inline-block;
@@ -120,6 +120,6 @@ input[type="checkbox"] + label span {
   height: 19px;
   margin: 0 8px 0 0;
   vertical-align: middle;
-  background: url(/src/images/sprites/png/check.png) left top no-repeat;
+  background: url(./src/images/sprites/png/check.png) left top no-repeat;
   cursor: pointer;
 }
