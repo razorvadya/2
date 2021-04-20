@@ -42,6 +42,8 @@
   &__img {
     width: 25%;
     @include media(tablet) {
+      width: 100%;
+      @include flex(row);
       justify-content: center;
     }
   }
@@ -67,25 +69,39 @@
     }
   }
   &__print {
-    background: url(./../images/sprites/png/print.png) no-repeat;
+    background: url(./../images/sprites/png/print.png) no-repeat 100% 100%;
     width: 184px;
     height: 166px;
     position: absolute;
     right: 4px;
     bottom: 13px;
+    @include media(tablet) {
+      width: 25%;
+      height: 100%;
+      background-size: contain;
+    }
   }
 }
 
 .skills {
   &__blocks {
     @include flex(row);
+    @include media(tablet) {
+      flex-wrap: wrap;
+    }
     margin-top: 26px;
   }
   &__block {
-    width: 100%;
+    width: 50%;
   }
   &__item {
     margin-bottom: 40px;
+    @include media(tablet) {
+      margin-bottom: 20px;
+      &:nth-child(3n) {
+        margin-bottom: 20px !important;
+      }
+    }
     &:nth-child(3n) {
       margin: 0;
     }
@@ -104,6 +120,10 @@
 .counter {
   &__blocks {
     @include flex(row center);
+    @include media(tablet) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__text {
@@ -118,6 +138,11 @@
   }
   &__texts {
     margin-left: 67px;
+    @include media(tablet) {
+      margin: 20px 0 0;
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
