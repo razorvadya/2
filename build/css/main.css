@@ -39,7 +39,7 @@ body {
 }
 
 .section__head, .section__skills, .section__footer {
-  background: url(../src/images/sprites/png/body.png);
+  background: url(./../images/sprites/png/body.png);
   width: 100%;
   position: relative;
   border-bottom: 2px solid #f0f0f0;
@@ -104,7 +104,7 @@ body {
   padding-top: 36px;
 }
 .form__print {
-  background: url(../src/images/sprites/png/print.png) no-repeat;
+  background: url(./../images/sprites/png/print.png) no-repeat;
   width: 184px;
   height: 166px;
   position: absolute;
