@@ -1,7 +1,8 @@
 .body {
   @include flex(column center);
   justify-content: center;
-  margin: 60px 0;
+  margin: 60px auto;
+  max-width: 660px;
 }
 
 .section {
@@ -9,9 +10,11 @@
   &__skills,
   &__footer {
     background: url(../src/images/sprites/png/body.png);
-    width: 660px;
+    width: 100%;
     position: relative;
     border-bottom: 2px solid #f0f0f0;
+    margin-right: 20px;
+    margin-left: 20px;
     &:nth-child(2) {
       padding: 36px 19px 40px;
     }
@@ -30,15 +33,26 @@
 
 .form {
   &__head {
-    @include flex(row flex-start);
+    @include flex(row flex-start wrap);
     margin: 30px 20px 32px;
+    @include media(tablet) {
+      justify-content: center;
+    }
+  }
+  &__img {
+    width: 25%;
+    @include media(tablet) {
+      justify-content: center;
+    }
   }
   &__info {
-    margin-left: 22px;
+    width: 75%;
+    @include media(tablet) {
+      width: 100%;
+    }
   }
   &__input {
     border-bottom: 2px solid #333333;
-    width: 460px;
     padding-bottom: 8px;
     -webkit-font-smoothing: antialiased;
     font-weight: 700;

@@ -3,7 +3,7 @@
     @media (max-width: 1080px) {
       @content;
     }
-  } @else if $size == tablet {
+  } @else if $size == tablet22 {
     @media (max-width: 530px) {
       @content;
     }
@@ -11,24 +11,8 @@
     @media (max-width: 819px) {
       @content;
     }
-  } @else if $size == tablet3 {
-    @media (max-width: 700px) {
-      @content;
-    }
-  } @else if $size == tablet4 {
+  } @else if $size == tablet {
     @media (max-width: 650px) {
-      @content;
-    }
-  } @else if $size == mobile-m {
-    @media (max-width: 375px) {
-      @content;
-    }
-  } @else if $size == mobile-s {
-    @media (max-width: 320px) {
-      @content;
-    }
-  } @else if $size == mobile-l {
-    @media (max-width: 425px) {
       @content;
     }
   }
